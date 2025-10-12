@@ -1,6 +1,6 @@
 # This is my CV
 
-<embed src="./main.pdf" type="application/pdf">
+![pdf CV](./main.jpg)
 
 # Build
 `nix run .#build`
