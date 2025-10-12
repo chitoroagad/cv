@@ -48,18 +48,31 @@
         ];
       };
 
+      unstable_typstPackages = [
+        {
+          name = "basic-resume";
+          version = "0.2.9";
+          hash = "sha256-PYGzfttkA+hgeF4NRzAiGujI39PqbCAU9Ub+U+/vCb0=";
+        }
+        {
+          name = "scienceicons";
+          version = "0.1.0";
+          hash = "sha256-gDj/8uaTypGJ8P5w88+uLY6zCBHySTXL/e1S+1iq/mY=";
+        }
+      ];
+
       # Compile a Typst project, *without* copying the result
       # to the current directory
       build-drv = typixLib.buildTypstProject (commonArgs
         // {
-          inherit src;
+          inherit src unstable_typstPackages;
         });
 
       # Compile a Typst project, and then copy the result
       # to the current directory
       build-script = typixLib.buildTypstProjectLocal (commonArgs
         // {
-          inherit src;
+          inherit src unstable_typstPackages;
         });
 
       # Watch a project and recompile on changes
