@@ -75,6 +75,14 @@
           inherit src unstable_typstPackages;
         });
 
+      build-png-script = typixLib.buildTypstProjectLocal (commonArgs
+        // {
+          inherit src unstable_typstPackages;
+          typstOpts = {
+            format = "png";
+          };
+        });
+
       # Watch a project and recompile on changes
       watch-script = typixLib.watchTypstProject (commonArgs // {typstWatchCommand = "typst watch --open";});
     in {
@@ -88,6 +96,9 @@
         default = watch;
         build = flake-utils.lib.mkApp {
           drv = build-script;
+        };
+        build-png = flake-utils.lib.mkApp {
+          drv = build-png-script;
         };
         watch = flake-utils.lib.mkApp {
           drv = watch-script;
