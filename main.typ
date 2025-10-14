@@ -69,8 +69,9 @@
   dates: dates-helper(start-date: "June 2025", end-date: "September 2025"),
 )
 - Extracted core functionality from an internal Rust CLI tool and exposed it via a scalable API endpoint, cutting update cycles from 90 days to 6 hours.
-- Convinced high-performance computers to work overtime without unions, reducing simulation time by 50%
 - Designed and implemented an MCP server enabling internal AI tools to automatically lease and control devices, streamlining internal workflows.
+- Implemented user-requested features in CLI tool increasing internal usage by 24%.
+- Optimised API calls in internal tool from 8 to 2, reducing overall time to execute by 21%.
 
 #work(
   title: "Software Engineer, IXN Placement",
@@ -103,8 +104,8 @@
 - Maintain a personal configuration of NixOS + home-manager to create a completely pure/functional workflow.
 - Experiment with upstream packages/features leading to open-source PRs.
 - Constantly iterating to perfect my workflow/dev environment.
-- Allows me to always fallback to working state when experimenting and take my workflow to any machine.
-- Includes custom front-end shell (app launcher, status bar, notification, etc).
+- Allows me to always fall back to working state when experimenting and take my workflow to any machine.
+- Includes custom front-end shell (app launcher, status bar, notification, etc.).
 
 #project(
   name: "Syllabus Generator",
@@ -116,7 +117,7 @@
 - Implemented LLM response validation with dynamic prompts, reducing response parsing errors by 100%.
 
 == Skills
-- *Programming Languages*: Python, C, Rust, Java, JS, Go, Haskell, Bash/Fish
+- *Programming Languages*: Python, C, Rust, Java, JS, Go, Haskell, Bash/Zsh/Fish
 - *Technologies*: React, Git, UNIX, Docker, Linux, LangChain, Embedded Systems, IoT
 - *Other*: Poker, Tennis, Basketball, Neovim, Nix
 
