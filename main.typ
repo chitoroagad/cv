@@ -105,7 +105,7 @@
 - Experiment with upstream packages/features leading to open-source PRs.
 - Constantly iterating to perfect my workflow/dev environment.
 - Allows me to always fall back to working state when experimenting and take my workflow to any machine.
-- Includes custom front-end shell (app launcher, status bar, notification, etc.).
+- Includes custom front-end shell in Typescript using GTK widgets (app launcher, status bar, notifications, etc.).
 
 #project(
   name: "Syllabus Generator",

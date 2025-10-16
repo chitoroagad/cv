@@ -100,6 +100,13 @@
         build-png = flake-utils.lib.mkApp {
           drv = build-png-script;
         };
+        build-all = flake-utils.lib.mkApp {
+          drv = pkgs.writeShellScriptBin "build-all" ''
+            set -e
+            ${build-script}/bin/${build-script.pname or "typst-build"}
+            ${build-png-script}/bin/${build-png-script.pname or "typst-build"}
+          '';
+        };
         watch = flake-utils.lib.mkApp {
           drv = watch-script;
         };
