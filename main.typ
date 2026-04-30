@@ -108,13 +108,13 @@
 - Includes custom front-end shell in Typescript using GTK widgets (app launcher, status bar, notifications, etc.).
 
 #project(
-  name: "Syllabus Generator",
-  role: "Open-Source Teaching Assistant",
-  dates: dates-helper(start-date: "June 2024", end-date: "August 2024"),
+  name: "PeerWatch",
+  role: "Autonomous Network Anomaly Detection",
+  dates: dates-helper(start-date: "September 2025", end-date: "April 2026"),
 )
-- Extended an existing API to build an LLM powered syllabus generator, for easy fine-tuning by user.
-- Lead a team of 8 people as technical lead, delegating tasks and planning anatomy of project.
-- Implemented LLM response validation with dynamic prompts, reducing response parsing errors by 100%.
+- Daemon fingerprints subnet devices via nmap + passive packet capture; scores identity drift across 20+ weighted signals
+- Fleet correlator detects coordinated attacks across peers; triggers LLM investigation agent with rule-based fallback and autonomous iptables remediation
+
 
 == Skills
 - *Programming Languages*: Python, C, Rust, Java, JS, Go, Haskell, Bash/Zsh/Fish
