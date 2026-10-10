@@ -45,11 +45,11 @@
   institution: "University College London",
   location: "London, UK",
   dates: dates-helper(start-date: "September 2022", end-date: "June 2026"),
-  degree: "Master's of Engineering, Computer Science",
+  degree: "Bachelor's Degree in Computer Science",
   // Uncomment the line below if you want edu formatting to be consistent with everything else
   //consistent: true,
 )
-- Relevant Coursework: Computer Systems, DSA, Supervised Learning, (Co)-Algebraic Structures, Robotics
+- Computer Systems, DSA, Supervised Learning, (Co)-Algebraic Structures, Robotics
 
 #edu(
   institution: "Ashlawn School",
