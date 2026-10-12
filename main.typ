@@ -39,34 +39,22 @@
  * #generic-two-by-two(top-left: "", top-right: "", bottom-left: "", bottom-right: "")
  * #generic-one-by-two(left: "", right: "")
  */
-== Education
-
-#edu(
-  institution: "University College London",
-  location: "London, UK",
-  dates: dates-helper(start-date: "September 2022", end-date: "June 2026"),
-  degree: "Bachelor's Degree in Computer Science",
-  // Uncomment the line below if you want edu formatting to be consistent with everything else
-  //consistent: true,
-)
-- Computer Systems, DSA, Supervised Learning, (Co)-Algebraic Structures, Robotics
-
-#edu(
-  institution: "Ashlawn School",
-  location: "Rugby, UK",
-  dates: dates-helper(start-date: "September 2020", end-date: "June 2022"),
-  degree: "A-levels: Mathematics, Physics, Computer Science, Further Mathematics, EPQ",
-  //consistent: true,
-)
-- Grades: A\*A\*A\*AB
-
 == Work Experience
 
 #work(
-  title: "Software Engineer Intern",
+  title: "Software Engineer",
   location: "London, UK",
   company: "Meta",
-  dates: dates-helper(start-date: "June 2025", end-date: "September 2025"),
+  dates: dates-helper(start-date: "August 2026", end-date: "Present"),
+)
+- Improving test health for wearables, ensuring device test failures and logs are reliably collected and triaged.
+- Building an AI-powered triage pipeline that preserves logs and failures when callers kill the app, so issues reach the right owner.
+- 99.99% of failures now contain correct logs/triage.
+
+// Same company as above, so the company/location line is omitted
+#generic-one-by-two(
+  left: strong("Software Engineer Intern"),
+  right: dates-helper(start-date: "June 2025", end-date: "September 2025"),
 )
 - Extracted core functionality from an internal Rust CLI tool and exposed it via a scalable API endpoint, cutting update cycles from 90 days to 6 hours.
 - Designed and implemented an MCP server enabling internal AI tools to automatically lease and control devices, streamlining internal workflows.
@@ -94,6 +82,27 @@
 - Wrote device drivers, for an IMU device to transmit up to 8 d.p. accuracy accelerometer and gyroscope data to a main board.
 - Created 3D visualiser for IMU data showing orientation and acceleration of device in an easily digestible manner, resulting in identification of over 5 serious bugs by various team members.
 
+== Education
+
+#edu(
+  institution: "University College London",
+  location: "London, UK",
+  dates: dates-helper(start-date: "September 2022", end-date: "June 2026"),
+  degree: "Bachelor's Degree in Computer Science",
+  // Uncomment the line below if you want edu formatting to be consistent with everything else
+  //consistent: true,
+)
+- Computer Systems, DSA, Supervised Learning, (Co)-Algebraic Structures, Robotics
+
+// #edu(
+//   institution: "Ashlawn School",
+//   location: "Rugby, UK",
+//   dates: dates-helper(start-date: "September 2020", end-date: "June 2022"),
+//   degree: "A-levels: Mathematics, Physics, Computer Science, Further Mathematics, EPQ",
+//   //consistent: true,
+// )
+// - Grades: A\*A\*A\*AB
+
 == Projects
 
 #project(
@@ -103,8 +112,6 @@
 )
 - Maintain a personal configuration of NixOS + home-manager to create a completely pure/functional workflow.
 - Experiment with upstream packages/features leading to open-source PRs.
-- Constantly iterating to perfect my workflow/dev environment.
-- Allows me to always fall back to working state when experimenting and take my workflow to any machine.
 - Includes custom front-end shell in Typescript using GTK widgets (app launcher, status bar, notifications, etc.).
 
 #project(
